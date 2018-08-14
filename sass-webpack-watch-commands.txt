@@ -1,4 +1,13 @@
+------------INSTALLATION----------------
+REACT
+npx create-react-app <app-name>
+cd <app-name>
+npm start
 
+npm install webpack sass gulp --save-dev (devDependencies)
+Use SASS with React [gulp-sass gulp-clean-css gulp-uglify gulp-rename gulp-changed]
+
+----------------SCRIPTS------------------
 sass --watch src/scss:dist/css --style compressed  (watch this folder and minify)
 sass --watch ./scss/main.scss ./dist/css/main.min.css --style compressed
 
