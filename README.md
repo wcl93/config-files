@@ -2,4 +2,4 @@
 Webpack 
 SASS
 React
-Gulp
+Babel
