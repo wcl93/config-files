@@ -1,0 +1,9 @@
+
+sass --watch src/scss:dist/css --style compressed  (watch this folder and minify)
+sass --watch ./scss/main.scss ./dist/css/main.min.css --style compressed
+
+webpack --watch
+
+No config file
+webpack ./src/js/main.js ./dist/bundle.min.js -d --watch (development)
+webpack ./src/js/main.js ./dist/bundle.min.js -p         (production)
