@@ -36,5 +36,6 @@ npm install --save url-loader  # loads small assets as dataURIs# large assets ge
 
 --------------------------COMMANDS--------------------
 npm run start or npm start
- "start": "webpack-dev-server --inline --hot",
-"sass-build": "sass ./src:./build --style compressed "
+ "start": "webpack-dev-server --inline --hot", (live server)
+"sass-build": "sass ./src:./build --style compressed " (minify bundle sass)
+"webpack-build": "webpack" (minify bundle js)
