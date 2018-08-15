@@ -6,7 +6,7 @@ npm init
 npm install --save react
 npm install --save react-dom
 
-npm install --save webpack
+npm install --save webpack webpack-cli
 touch webpack.config.js
 
 BABEL
