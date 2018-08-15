@@ -14,6 +14,12 @@ npm install --save babel-core  # base of the Babel ecosystem, parses JS code,
 npm install --save babel-loader  # allows Webpack to transpile JS code via Babel
 npm install --save babel-preset-env  # allows transpilation from latest ES2015+# features to ES5 
 npm install --save babel-preset-react  #and finally, JSX to ES5 transpilation
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  }
 
 npm install --save html-webpack-plugin
 npm install --save webpack-dev-server
