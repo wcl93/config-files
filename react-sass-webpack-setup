@@ -39,3 +39,9 @@ npm run start or npm start
  "start": "webpack-dev-server --inline --hot", (live server)
 "sass-build": "sass ./src:./build --style compressed " (minify bundle sass)
 "webpack-build": "webpack" (minify bundle js)
+
+---------------------BUILD-------------------------
+1. Install
+2. Config babel webpack (folder paths)
+3. Import react reactDOM scss files
+4. Run script and server
