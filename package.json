@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --inline --hot",
-    "sass-build": "sass ./src:./build --style compressed "
+    "sass-build": "sass ./src:./build --style compressed --watch ",
+    "webpack": "webpack --watch"
   },
   "author": "",
   "license": "ISC",
