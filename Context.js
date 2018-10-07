@@ -22,7 +22,11 @@ const reducer = (state, action)=> {
 export class Provider extends Component {
     //whole state
     state ={
-        arrayField:['from','state','context']
+        arrayField:['from','state','context'],
+        /* able to call this action (method) from other components */
+        dispatch: action => {
+        this.setState(state=>  reducer(state,action)) //set state to filtered out id
+        }
     } 
     //Return context provider
     render(){
@@ -31,10 +35,6 @@ export class Provider extends Component {
                 {this.props.children}
             </Context.Provider>
         )
-        /* able to call this action (method) from other components */
-        dispatch: action => {
-            this.setState(state=>  reducer(state,action)) //set state to filtered out id
-        }
     }
 }
 
