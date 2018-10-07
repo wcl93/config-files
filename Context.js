@@ -31,6 +31,10 @@ export class Provider extends Component {
                 {this.props.children}
             </Context.Provider>
         )
+        /* able to call this action (method) from other components */
+        dispatch: action => {
+            this.setState(state=>  reducer(state,action)) //set state to filtered out id
+        }
     }
 }
 
