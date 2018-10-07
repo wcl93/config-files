@@ -35,3 +35,39 @@ export class Provider extends Component {
 }
 
 export const Consumer = Context.Consumer
+
+//------------------App.js //Provider-----------------
+class App extends Component {
+    render() {
+      return (
+        <Provider>
+          <div className="App">
+            <h1>App</h1>
+            <Users />
+          </div>
+        </Provider>
+      );
+    }
+  }
+  
+  export default App;
+
+  //----------Consumer-------------
+  export default class Users extends Component {
+    render() {
+      return (
+        <Consumer>
+          {/* child of consumer is always a function {} 
+              Access the whole state from value */}
+          {value => {
+            const { arrayField } = value;
+            return (
+              <div >
+                <h2>Users This is {arrayField}</h2>
+              </div>
+            );
+          }}
+        </Consumer>
+      );
+    }
+  }
