@@ -6,9 +6,9 @@ const Context = React.createContext();
 const reducer = (state, action)=> {
     switch(action.type){
         case 'EXAMPLE':
-        return {
-
-        };
+        return (
+            console.log('Action success')
+        );
         case 'EXAMPLE2':
         return{
 
@@ -58,6 +58,18 @@ class App extends Component {
 
   //----------Consumer-------------
   export default class Users extends Component {
+      //Dispatch action payload
+    onSubmit(dispatch, e){
+        e.preventDefault();
+        const newUser = {
+            //empty
+        }
+        dispatch({ type:'EXAMPLE', payload: newUser})
+    }
+    onChange= e =>{
+        console.log({ [e.target.name]: e.target.value });
+    }
+    
     render() {
       return (
         <Consumer>
@@ -68,6 +80,12 @@ class App extends Component {
             return (
               <div >
                 <h2>Users This is {arrayField}</h2>
+          
+                <form onSubmit={this.onSubmit.bind(this, dispatch)}>
+                  <label>Name</label>
+                  <input name='name' onChange={this.onChange}type='text' placeholder='Name..'/>
+                  <button type='submit'>Submit</button>
+                </form>
               </div>
             );
           }}
