@@ -75,7 +75,7 @@ class App extends Component {
           {/* child of consumer is always a function {} 
               Access the whole state from value */}
           {value => {
-            const { arrayField } = value;
+            const { arrayField, dispatch } = value;//Bring in dispatch to use
             return (
               <div >
                 <h2>Users This is {arrayField}</h2>
