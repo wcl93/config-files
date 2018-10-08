@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-//New Context
+//---------------------New Context----------------------
 const Context = React.createContext();
 
 const reducer = (state, action)=> {
@@ -11,7 +11,6 @@ const reducer = (state, action)=> {
         );
         case 'EXAMPLE2':
         return{
-
         };
         default:
         return state;
@@ -40,7 +39,7 @@ export class Provider extends Component {
 
 export const Consumer = Context.Consumer
 
-//------------------App.js //Provider-----------------
+//---------------------------App.js //Provider------------------------------
 class App extends Component {
     render() {
       return (
@@ -56,7 +55,7 @@ class App extends Component {
   
   export default App;
 
-  //----------Consumer-------------
+  //----------------------Consumer--------------------------
   export default class Users extends Component {
       //Dispatch action payload
     onSubmit(dispatch, e){
