@@ -54,6 +54,8 @@ export class Provider extends Component {
 export const Consumer = Context.Consumer
 
 //---------------------------App.js //Provider------------------------------
+import {Provider} from "./context";
+
 class App extends Component {
     render() {
       return (
@@ -70,6 +72,8 @@ class App extends Component {
   export default App;
 
   //----------------------Consumer--------------------------
+ import {Consumer} from "../../context";
+
   export default class Users extends Component {
       //Dispatch action payload
     onSubmit(dispatch, e){
