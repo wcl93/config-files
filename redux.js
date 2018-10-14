@@ -110,5 +110,6 @@ const mapStateToProps = (state) =>({
   contacts:state.contact.contacts
 })
 
+//can be null if no props to receive
 export default connect(mapStateToProps, {getContacts})(Contacts);
 
