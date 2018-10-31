@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-//---------------------New Context----------------------
+//---------------------Context.js ----------------------
 const Context = React.createContext();
 
 const reducer = (state, action)=> {
