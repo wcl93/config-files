@@ -4,33 +4,33 @@
 
 ### UI
 
-MaterialUI
+- MaterialUI
 
-Node-sass
+- Node-sass
 
 ### HTTP 
 
-Axios
+- Axios
 
-UUID
+- UUID
 
 ### Redux
 
-react-redux 
+- react-redux 
 
-redux-thunk
+- redux-thunk
 
-redux
+- redux
 
 ### Router
 
-react-router-dom
+- react-router-dom
 
 ### Webpack 
-webpack
 
-webpack-cli
+- webpack
 
+- webpack-cli
 
 https://www.codementor.io/valentinrad/roll-your-own-tiny-react-environment-using-webpack-babel-and-sass-ei70wyhjl
 
