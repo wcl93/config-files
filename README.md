@@ -1,7 +1,7 @@
 # Config-files
 ## Webpack-SASS-React-Babel boilerplate
 
-## Libraries
+## React Libraries
 
 ### UI
 
