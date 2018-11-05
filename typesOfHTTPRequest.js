@@ -39,6 +39,10 @@ HTTP.send();
       this.setState({ contacts: JSON.parse(http.responseText) });
     };
     http.send();
+-------------POST----
+  const http= new XMLHttpRequest();
+    http.open('POST',"https://jsonplaceholder.typicode.com/users")
+    http.send(contact);
 
 /* ----------------------jQuery AJAX--------------------- */
 $(document.readyState(function(){
