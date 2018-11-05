@@ -1,15 +1,30 @@
 # Config-files
 ## Webpack-SASS-React-Babel boilerplate
 
-### Libraries
+## Libraries
+
+###UI
 
 MaterialUI
+
+Node-sass
+
+### HTTP calls
 
 Axios
 
 UUID
 
-Node-sass
+###Redux
+
+react-redux 
+
+redux-thunk
+
+redux
+
+react-router-dom
+
 
 https://www.codementor.io/valentinrad/roll-your-own-tiny-react-environment-using-webpack-babel-and-sass-ei70wyhjl
 
