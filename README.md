@@ -1,5 +1,4 @@
 # Config-files
-## Webpack-SASS-React-Babel boilerplate
 
 ## React Libraries
 
@@ -9,7 +8,7 @@ MaterialUI
 
 Node-sass
 
-### HTTP calls
+### HTTP 
 
 Axios
 
