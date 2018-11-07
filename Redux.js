@@ -74,12 +74,6 @@ export const deleteContact = (id) => {
     return {
         type:DELETE_CONTACT,
         payload:id
-        ----------------OR--------------
-        const res = await axios.get('https://jsonplaceholder.typicode.com/users')
-        dispatch ({
-        type:GET_CONTACTS,
-        payload: res.data
-    })
     };
 };
 
@@ -88,6 +82,18 @@ export const addContact = (contact) => {
         type:ADD_CONTACT,
         payload: contact
     };
+};
+
+        ----------------OR--------------
+export const addContact = contact => async dispatch => {
+  const res = await axios.post(
+    "https://jsonplaceholder.typicode.com/users",
+    contact
+  );
+  dispatch({
+    type: ADD_CONTACT,
+    payload: res.data
+  });
 };
 
 /* --------------Contacts component------------ */
