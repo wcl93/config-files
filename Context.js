@@ -16,6 +16,8 @@ const reducer = (state, action)=> {
             ...state,
             contacts: [action.payload, 
                 ...state.contacts]
+             //arrayField:state.arrayField.concat(action.payload.name)
+
         };
         case 'UPDATE_CONTACT':
         return {
