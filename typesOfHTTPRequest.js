@@ -1,13 +1,30 @@
 /*=====================AXIOS========================*/
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 //POST
 const res = await axios.post('https://jsonplaceholder.typicode.com/users',
 newContact)
   dispatch({ type: "ADD_CONTACT", 
-  payload: res.data })
+  payload: res.data });
+-----------------
+const data = {
+  name: "John",
+  email: "email@email.com"
+};
+
+axios.post(url, data)
+.then(res => {
+  console.log(res.data);
+});
 ----------
 //GET
  const res = await axios.get('https://jsonplaceholder.typicode.com/users')
  this.setState({contacts:res.data})
+------------
+  axios.get(url)
+    .then(res => {
+    console.log(res.data);
+  });
 
 
 /* ======================FETCH===========================*/
