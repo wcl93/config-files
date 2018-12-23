@@ -1,19 +1,23 @@
-/* ------------------AXIOS----------------------- */
+/*=====================AXIOS========================*/
+//POST
 const res = await axios.post('https://jsonplaceholder.typicode.com/users',
 newContact)
   dispatch({ type: "ADD_CONTACT", 
   payload: res.data })
 ----------
+//GET
  const res = await axios.get('https://jsonplaceholder.typicode.com/users')
  this.setState({contacts:res.data})
 
-/* -------------------FETCH------------------- */
+
+/* ======================FETCH===========================*/
 const url = 'https://jsonplaceholder.typicode.com/post';
 
+//GET
   fetch(url)
   .then (data=>{return data.json()})
   .then(res=>{console.log(res)})
--------------
+--------------
 fetch(url)
       .then(data => {
         return data.json();
@@ -21,17 +25,36 @@ fetch(url)
       .then(res => {
         this.setState({ contacts: res });
       });
+--------------------------
+//POST
+//init takes in object parameters for fetch api
+  const init = {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      name: "John",
+      email: "email@email.com"
+    })
+  };
 
-  /* ----------------AJAX----------------------------- */
+  fetch(url, init)
+  .then(data => {
+    console.log(data);
+  });
+
+  /* ==========================AJAX======================= */
 const HTTP =  new XMLHttpRequest();
 const url = 'https://jsonplaceholder.typicode.com/post';
 
+//GET
 HTTP.open('GET', url);
 HTTP.onload =()=>{
             console.log(JSON.parse(HTTP.responseText));
         }
         HTTP.send();
-HTTP.send();
 ---------------
   const http = new XMLHttpRequest();
     http.open("GET", url);
@@ -39,12 +62,14 @@ HTTP.send();
       this.setState({ contacts: JSON.parse(http.responseText) });
     };
     http.send();
--------------POST----
+
+//POST
   const http= new XMLHttpRequest();
     http.open('POST',"https://jsonplaceholder.typicode.com/users")
     http.send(contact);
 
-/* ----------------------jQuery AJAX--------------------- */
+/* ====================jQuery AJAX=====================*/
+//GET
 $(document.readyState(function(){
     const url = 'https://jsonplaceholder.typicode.com/post';
 
@@ -72,6 +97,19 @@ $(document.readyState(function(){
       }
     });
 
-/* JSON.stringify - Turns object into string to send to server
+//POST 
+  $.ajax({
+    url: url,
+    type: "POST",
+    data: {
+      name: "John",
+      email: "email@email.com"
+    },
+    success: result => {
+      console.log(result);
+    }
+  });
+
+/* JSON.stringify - Turns object into JSON data to send to server
 JSON.parse - Turns JSON data to object*/
 
