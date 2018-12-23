@@ -13,10 +13,11 @@ npm init
 npm install --save react
 npm install --save react-dom
 
+--Webpack--
 npm install --save webpack webpack-cli
 touch webpack.config.js
 
-BABEL
+--BABEL--
 npm install --save babel-core  # base of the Babel ecosystem, parses JS code,
 npm install --save babel-loader  # allows Webpack to transpile JS code via Babel
 npm install --save babel-preset-env  # allows transpilation from latest ES2015+# features to ES5 
