@@ -128,5 +128,6 @@ $(document.readyState(function(){
   });
 
 /* JSON.stringify - Turns object into JSON data to send to server
-JSON.parse - Turns JSON data to object*/
+JSON.parse - Turns JSON data to object
+.serialize() - turns to string */
 
